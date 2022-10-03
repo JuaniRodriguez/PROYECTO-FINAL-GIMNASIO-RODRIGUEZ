@@ -1,0 +1,618 @@
+@media (min-width: 992px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+  body {
+    background-color: rgba(0, 0, 0, 0.788);
+    margin: auto; }
+  h4 {
+    color: white; }
+  p {
+    color: white;
+    font-size: 20px; }
+  h2 {
+    color: orange;
+    font-size: 45px; }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; }
+  .logo {
+    border-radius: 5px;
+    width: 120px;
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+    .logo:hover {
+      transform: scale(1.1); }
+  .lista-item {
+    margin: 30px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px; }
+  h1 {
+    font-size: 50px;
+    color: orange; }
+  .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 2px; }
+    .nav-link:hover {
+      color: orange; }
+  .align-items-center {
+    grid-area: main;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url("../Img/frente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 400px;
+    margin-bottom: 10px; }
+  .bienvenida-titulo {
+    text-align: center;
+    font-size: 120px;
+    transition: transform(1s); }
+    .bienvenida-titulo:hover {
+      transform: scale(1.1); }
+  .justify-content-evenly {
+    text-align: center;
+    margin-top: 100px; }
+  .fa-solid {
+    font-size: 100px;
+    border: 5px solid black;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: orange; }
+  /************************MAIN QUIENES SOMOS*************************/
+  .main-quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .contenedor-imagen {
+    display: flex;
+    justify-content: center; }
+  .frentenoche {
+    width: 50vw;
+    height: 50vh;
+    border: 2px solid orange;
+    object-fit: cover; }
+  .galeria {
+    color: orange;
+    font-size: 30px; }
+  .d-block {
+    max-width: 900px; }
+  main h2 {
+    font-size: 80px;
+    margin-left: 5px; }
+  main p {
+    text-align: center; }
+  /*************PROFESORES*****************************************************/
+  .main-profesores {
+    grid-area: main; }
+  .contenedor-img-profesores {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-around; }
+  .titulo-profesores, div h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 80px; }
+  div h4 {
+    font-size: 40px;
+    margin-top: 0px; }
+  .profe {
+    border: 2px solid orange;
+    width: 300px;
+    height: 300px;
+    object-fit: cover; }
+  /*************SERVICIOS*****************************************************/
+  .main-servicios {
+    margin-top: 40px;
+    margin-bottom: 120px; }
+  .titulo-servicios {
+    font-size: 80px;
+    padding-left: 10px;
+    margin-bottom: 50px; }
+  .d-flex {
+    align-items: center; }
+  .text-bg-dark {
+    width: 600px; }
+  .card-img {
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+    opacity: 0.4; }
+  .card-title {
+    font-size: 50px;
+    margin-bottom: 60px; }
+  .informacion {
+    margin-top: -50px;
+    padding-bottom: 700px; }
+  .informacion li {
+    margin-left: 20px;
+    margin-top: 0px; }
+  .natacion, .gimnasio, .funcional {
+    margin-bottom: 80px; }
+  .informacion-funcional {
+    margin-left: 20px; }
+  /*************CONTACTO*********************/
+  .main-contacto {
+    grid-area: main;
+    margin-top: 50px;
+    margin-bottom: 150px; }
+  form {
+    display: flex;
+    justify-content: center; }
+  .titulo-contacto {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 100px; }
+  .datos {
+    margin-right: 20px; }
+  label {
+    color: white;
+    font-size: 20px; }
+  input {
+    display: flex;
+    margin-top: -28px;
+    margin-bottom: 10px;
+    margin-left: 90px; }
+  .consulta-envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form-control {
+    margin-left: 20px;
+    margin-top: 40px;
+    width: 400px;
+    height: 400px; }
+  .form-floating label {
+    margin-top: -10px; }
+  button {
+    margin-top: 10px; }
+  .footer-contacto {
+    margin-top: 110px; }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 80px;
+    margin-left: 5px; }
+  #facebook, #instagram, #whatsapp {
+    font-size: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: orange; }
+  .footer-contacto {
+    grid-area: footer;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 80px;
+    margin-left: 5px; } }
+
+@media (min-width: 576px) and (max-width: 992px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+  body {
+    background-color: rgba(0, 0, 0, 0.788);
+    margin: auto; }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; }
+  .contenedor-logo {
+    text-align: center;
+    margin-bottom: -50px; }
+  .logo {
+    border-radius: 5px;
+    width: 40%;
+    height: 60%;
+    margin-top: 30px;
+    margin-bottom: 0px; }
+  .nav-link {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 2px; }
+  /************************MAIN INDEX*************************/
+  .align-items-center {
+    grid-area: main;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url("../Img/frente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+  .bienvenida-titulo {
+    text-align: center;
+    font-size: 60px;
+    color: orange;
+    margin-top: 120px;
+    margin-bottom: 40px; }
+  .bienvenida {
+    width: 820px; }
+  .justify-content-evenly {
+    text-align: center;
+    margin-top: 100px; }
+  .fa-solid {
+    font-size: 50px;
+    border: 5px solid black;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: orange;
+    margin-bottom: 120px;
+    margin-right: 20px; }
+  .index {
+    margin-top: 50px; }
+  /************************MAIN QUIENES SOMOS*************************/
+  main h2 {
+    color: orange;
+    font-size: 80px;
+    text-align: center; }
+  main p {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .frentenoche {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria {
+    text-align: center; }
+  u {
+    font-size: 60px;
+    color: orange; }
+  .carousel-inner {
+    margin-top: 10px; }
+  .d-block {
+    max-height: 500px; }
+  /*************MAIN PROFESORES*****************************************************/
+  .contenedor-img-profesores {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto; }
+  .titulo-profesores, div h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: orange;
+    font-size: 60px; }
+  div h4 {
+    text-align: center;
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: white; }
+  .profe {
+    border: 2px solid orange;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-bottom: 10px; }
+  .uno, .dos, .tres, .cuatro, .cinco, .seis {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .col {
+    padding-bottom: 20px; }
+  /*************MAIN SERVICIOS*****************************************************/
+  .main-servicios {
+    margin-top: 40px;
+    margin-bottom: 120px;
+    margin-left: 20px;
+    margin-right: 20px; }
+  .titulo-servicios {
+    margin-bottom: 50px;
+    color: orange;
+    font-size: 75px;
+    text-align: center; }
+  .text-bg-dark {
+    width: 100%; }
+  .card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.4; }
+  .card-title {
+    margin-bottom: 60px;
+    font-size: 60px; }
+  .informacion {
+    margin-top: -50px;
+    padding-bottom: 700px; }
+  .informacion li {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px; }
+  .natacion, .gimnasio, .funcional {
+    margin-bottom: 80px; }
+  .informacion-funcional li {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px; }
+  /*************MAIN CONTACTO*****************************************************/
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .titulo-contacto {
+    color: orange;
+    text-align: center;
+    font-size: 60px; }
+  .actividad {
+    color: orange;
+    font-size: 45px;
+    margin-top: 10px;
+    padding-bottom: 0px; }
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center; }
+  .datos div {
+    margin-top: 20px;
+    padding-bottom: 20px; }
+  label {
+    color: white;
+    font-size: 30px; }
+  .consulta-envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form-control {
+    margin-top: 40px;
+    width: 700px;
+    height: 700px;
+    font-size: 25px; }
+  .form-floating label {
+    margin-top: -10px; }
+  .btn-primary {
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 20px; }
+  .footer-contacto {
+    margin-top: 110px; }
+  .form-check {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px; }
+  .form-check-label {
+    margin-top: -12px;
+    margin-left: 10px; }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 65px; }
+  #facebook, #instagram, #whatsapp {
+    font-size: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: orange; }
+  .ciudad {
+    color: orange;
+    padding-top: 20px;
+    padding-bottom: 100px; }
+  .titulo-ciudad {
+    font-size: 45px; }
+  .footer-contacto {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 65px; } }
+
+@media (max-width: 576px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; }
+  body {
+    background-color: rgba(0, 0, 0, 0.788);
+    margin: auto; }
+  .grid-container {
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; }
+  .logo {
+    border-radius: 5px;
+    width: 40%;
+    height: 40%;
+    margin-top: 10px;
+    margin-bottom: 0px; }
+  .nav-link {
+    text-decoration: none;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    letter-spacing: 2px; }
+  .align-items-center {
+    grid-area: main;
+    background-image: linear-gradient(rgba(5, 7, 12, 0.7), rgba(5, 7, 12, 0.7)), url("../Img/frente.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; }
+  .bienvenida-titulo {
+    text-align: center;
+    font-size: 50px;
+    color: orange;
+    margin-top: 120px; }
+  .justify-content-evenly {
+    text-align: center;
+    margin-top: 100px; }
+  .fa-solid {
+    font-size: 30px;
+    border: 5px solid black;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: orange;
+    margin-bottom: 120px; }
+  /*************MAIN QUIENES SOMOS*****************************************************/
+  main h2 {
+    color: orange;
+    font-size: 40px;
+    text-align: center; }
+  main p {
+    color: white;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px; }
+  .frentenoche {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
+  .galeria {
+    text-align: center; }
+  u {
+    font-size: 30px;
+    color: orange; }
+  .carousel-inner {
+    margin-top: 10px; }
+  .d-block {
+    max-height: 500px; }
+  /*************MAIN PROFESORES*****************************************************/
+  .contenedor-img-profesores {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    justify-content: center; }
+  .titulo-profesores, div h4 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: orange; }
+  div h4 {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 30px;
+    padding-bottom: 40px;
+    color: white; }
+  .profe {
+    border: 2px solid orange;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    align-self: center; }
+  .uno, .dos, .tres, .cuatro, .cinco, .seis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  /*************MAIN SERVICIOS*****************************************************/
+  .main-servicios {
+    margin-top: 40px;
+    margin-bottom: 120px;
+    margin-left: 15px;
+    margin-right: 15px; }
+  .titulo-servicios {
+    margin-bottom: 50px;
+    color: orange;
+    font-size: 40px;
+    text-align: center; }
+  .text-bg-dark {
+    width: 100%; }
+  .card-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    opacity: 0.4; }
+  .card-title {
+    margin-bottom: 90px;
+    font-size: 30px; }
+  .informacion {
+    margin-top: -50px;
+    padding-bottom: 700px; }
+  .informacion li {
+    margin-left: -3px;
+    padding: 10px;
+    font-size: 15px; }
+  .natacion, .gimnasio, .funcional {
+    margin-bottom: 80px; }
+  .informacion-funcional li {
+    margin-left: -3px;
+    padding: 10px;
+    font-size: 15px; }
+  /*************MAIN CONTACTO*****************************************************/
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .titulo-contacto {
+    color: orange;
+    text-align: center; }
+  .datos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center; }
+  .datos div {
+    margin-top: 20px;
+    padding-bottom: 20px; }
+  label {
+    color: white; }
+  .actividad {
+    color: orange;
+    font-size: 25px;
+    margin-top: 10px;
+    padding-bottom: 0px; }
+  .consulta-envio {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .form-control {
+    margin-top: 40px;
+    width: 250px;
+    height: 250px;
+    font-size: 15px; }
+  .form-floating label {
+    margin-top: -10px; }
+  .btn-primary {
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px; }
+  .footer-contacto {
+    margin-top: 110px; }
+  .form-check {
+    display: flex;
+    justify-content: center;
+    margin-top: -10px; }
+  .form-check-label {
+    margin-left: 10px; }
+  .footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 65px; }
+  #facebook, #instagram, #whatsapp {
+    font-size: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: orange; }
+  .ciudad {
+    color: orange;
+    padding-top: 20px;
+    padding-bottom: 80px; }
+  .titulo-ciudad {
+    font-size: 25px; }
+  .footer-contacto {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    padding-bottom: 65px; } }

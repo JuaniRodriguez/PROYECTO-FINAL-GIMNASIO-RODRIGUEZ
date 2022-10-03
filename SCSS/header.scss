@@ -1,0 +1,45 @@
+
+.logo {
+    border-radius: 5px;
+    @include sizes(120px,100px);
+    margin: {
+        top:10px;
+        bottom: 5px;
+    }
+    &:hover {
+        transform:scale(1.1)
+    }
+}
+
+.lista {
+    &-item {
+        margin: 30px;
+        font: {
+            size: 20px;
+            family:Arial, Helvetica, sans-serif;
+        }
+        letter-spacing: 2px;
+    }
+}
+
+h1 {
+    font-size: 50px;
+    color: $colorNaranja;
+}
+
+.nav-link{
+    text-decoration: none;
+    font: {
+        size: 20px;
+        family:Arial, Helvetica, sans-serif;
+    }
+    color: $colorBlanco;
+    letter-spacing: 2px;
+    &:hover {
+        color: $colorNaranja;
+
+    }
+    
+}
+
+

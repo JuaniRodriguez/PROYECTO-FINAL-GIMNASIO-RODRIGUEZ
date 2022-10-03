@@ -1,0 +1,247 @@
+
+
+
+.align-items-center {
+    grid-area: main;
+    background: {
+        image:linear-gradient(rgba(5,7,12,0.7),rgba(5,7,12,0.7)), url("../Img/frente.jpg");
+        size: cover;
+        repeat:no-repeat;
+            
+    };
+    padding: 400px;
+    margin-bottom: 10px;
+}
+
+.bienvenida-titulo {
+    text-align: map-get($propiedades,alineacion);
+    font-size: 120px;  
+    transition:transform(1s);
+    &:hover {
+        transform:scale(1.1)
+    }
+
+}
+
+.justify-content-evenly {
+    text-align: map-get($propiedades,alineacion);
+    margin-top: 100px;
+}
+
+.fa-solid {
+    font-size: 100px;
+    border:5px solid $colorNegro;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: map-get($propiedades,color);
+}
+
+/************************MAIN QUIENES SOMOS*************************/
+
+.main-quienessomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.contenedor-imagen {
+    display: flex;
+    justify-content: center
+}
+.frentenoche {
+    
+    @include sizes(50vw,50vh);
+    
+    border: 2px solid map-get($propiedades,color);
+    object-fit: cover;
+}
+
+.galeria {
+   // text-align: map-get($propiedades,alineacion);
+    color: map-get($propiedades,color);
+    font-size: 30px;
+}
+
+
+.d-block {
+   max-width: 900px;
+   
+}
+
+main h2 {
+    font-size: 80px;
+    margin-left: 5px;
+}
+main p {
+    text-align: map-get($propiedades,alineacion);
+}
+
+/*************PROFESORES*****************************************************/
+
+.main-profesores {
+    grid-area: main;
+}
+
+
+.contenedor-img-profesores {
+    display: grid;
+    grid-template: {
+        columns:auto auto auto;
+        rows: auto auto;
+    }
+    justify-content: space-around;
+}
+
+.titulo-profesores {
+    text-align: map-get($propiedades,alineacion);
+    margin-bottom: 10px;
+    font-size: 80px;
+}
+
+div h4 {
+    font-size: 40px;
+    @extend .titulo-profesores;
+    
+    margin-top: 0px;
+    
+}
+
+.profe {
+    border: 2px solid map-get($propiedades,color);
+    @include sizes(300px,300px);
+    object-fit: cover;
+    
+    
+}
+
+/*************SERVICIOS*****************************************************/
+
+.main-servicios {
+    margin: {
+        top: 40px;
+        bottom: 120px;
+    }
+    
+}
+
+
+.titulo-servicios {
+    font-size: 80px;
+    padding-left: 10px;
+    margin-bottom: 50px;
+
+}
+
+.d-flex {
+    align-items: map-get($propiedades,alineacion);
+}
+.text-bg-dark {
+    width: 600px;
+}
+
+.card-img {
+    @include sizes(600px,300px);
+    object-fit: cover;
+    opacity: 0.4;
+    
+}
+
+.card-title {
+    font-size: 50px;
+    margin-bottom: 60px;
+}
+
+.informacion {
+    margin-top: -50px;
+    padding-bottom: 700px;
+}
+.informacion li {
+    margin: {
+        left: 20px;
+        top: 0px;
+    }
+}
+
+.natacion,.gimnasio,.funcional {
+    margin-bottom: 80px;
+    
+}
+
+.informacion-funcional {
+    margin-left: 20px;
+}
+
+/*************CONTACTO*********************/
+
+.main-contacto {
+    grid-area: main;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+form {
+    display: map-get($propiedades,display);
+    justify-content:map-get($propiedades,alineacion);
+    
+}
+
+.titulo-contacto {
+    text-align: map-get($propiedades,alineacion);
+    font-size: 80px;
+    margin-bottom: 100px;
+
+}
+
+.datos {
+    margin-right: 20px;
+}
+
+
+
+label {
+    color: $colorBlanco;
+    font-size: 20px;
+}
+
+input {
+    display: map-get($propiedades,display);
+    margin: {
+        top: -28px;
+        bottom: 10px;
+        left: 90px;
+    }
+
+    
+}
+
+.consulta-envio {
+    display: map-get($propiedades,display);
+    flex-direction: column;
+    align-items: map-get($propiedades,alineacion);
+}
+.form-control {
+    margin: {
+        left: 20px;
+        top:40px;
+    }
+    @include sizes(400px,400px)
+    
+    
+}
+
+
+.form-floating label {
+    margin-top: -10px;
+}
+
+button {
+    margin-top: 10px;
+    
+}
+
+.footer-contacto {
+    margin-top: 110px;
+    
+}
+
+

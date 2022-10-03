@@ -1,0 +1,44 @@
+.footer {
+    grid-area: footer;
+    display: map-get($propiedades,display);
+    flex-direction: column;
+    align-items: map-get($propiedades,alineacion);
+    margin-top: 40px;
+    padding-bottom: 65px;
+
+}
+
+
+
+#facebook,#instagram,#whatsapp {
+    font-size: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: map-get($propiedades,color);
+
+}
+
+
+.ciudad  {
+    color: map-get($propiedades,color);
+    
+    padding: {
+        top: 20px;
+        bottom: 100px;
+    }
+    
+}
+
+.titulo-ciudad {
+    font-size: 45px;
+}
+
+.footer-contacto {
+    grid-area: footer;
+    display: map-get($propiedades,display);
+    flex-direction: column;
+    align-items: map-get($propiedades,alineacion);
+    margin-top: 40px;
+    padding-bottom: 65px;
+
+}

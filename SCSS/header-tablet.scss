@@ -1,0 +1,27 @@
+
+
+.contenedor-logo {
+    text-align: map-get($propiedades,alineacion);
+    margin-bottom: -50px;
+}
+
+.logo {
+    border-radius: 5px;
+    @include sizes(40%,60%);
+    margin: {
+        top: 30px;
+        bottom: 0px;
+    }
+}
+
+
+.nav-link{
+    text-decoration: none;
+    font: {
+        size: 20px;
+        family:Arial, Helvetica, sans-serif;
+    }
+    color: $colorBlanco;
+    letter-spacing: 2px;
+}
+

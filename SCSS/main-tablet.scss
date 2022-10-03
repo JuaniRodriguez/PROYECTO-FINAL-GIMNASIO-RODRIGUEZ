@@ -1,0 +1,283 @@
+/************************MAIN INDEX*************************/
+.align-items-center {
+    grid-area: main;
+    background: {
+        image: linear-gradient(rgba(5,7,12,0.7),rgba(5,7,12,0.7)), url("../Img/frente.jpg");
+        size: cover;
+        repeat:no-repeat;
+    };
+    @include sizes(100%,100%);
+    overflow-x: hidden;
+
+}
+.bienvenida-titulo {
+    text-align: map-get($propiedades,alineacion);
+    font-size: 60px;
+    color: map-get($propiedades,color);
+    margin: {
+        top: 120px;
+        bottom: 40px;
+    }
+ 
+}
+
+.bienvenida {
+    width: 820px;
+}
+
+
+.justify-content-evenly {
+    text-align: map-get($propiedades,alineacion);
+    margin-top: 100px;
+}
+.fa-solid {
+    font-size: 50px;
+    border:5px solid $colorNegro;
+    border-radius: 100px;
+    padding: 10px;
+    background-color: map-get($propiedades,color);
+    margin: {
+        bottom: 120px;
+        right: 20px;
+    }
+    
+}
+
+.index {
+    margin-top: 50px;
+}
+
+/************************MAIN QUIENES SOMOS*************************/
+main h2 {
+    color: map-get($propiedades,color);
+    font-size: 80px;
+    text-align: map-get($propiedades,alineacion);
+    
+}
+main p {
+    color: $colorBlanco;
+    font-size: 30px;
+    text-align: map-get($propiedades,alineacion);
+    margin: {
+        left: 5px;
+        right: 5px;
+    }
+    
+}
+.frentenoche {
+    @include sizes(100%,100%);
+    object-fit: cover;
+}
+
+
+.galeria {
+    text-align: map-get($propiedades,alineacion);
+}
+u {
+    font-size: 60px;
+    color: map-get($propiedades,color);
+    
+}
+
+.carousel-inner {
+    margin-top: 10px;
+}
+
+
+
+.d-block {
+    
+    max-height: 500px;
+    
+}
+
+/*************MAIN PROFESORES*****************************************************/
+.contenedor-img-profesores {
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows:  auto auto auto;
+    
+}
+
+
+.titulo-profesores {
+    text-align: map-get($propiedades,alineacion);
+    margin-bottom: 30px;
+    color: map-get($propiedades,color);
+    font-size: 60px;
+}
+
+div h4 {
+    text-align: map-get($propiedades,alineacion);
+    font-size: 40px;
+    padding-bottom: 10px;
+    color: $colorBlanco;
+
+}
+
+.profe {
+    border: 2px solid map-get($propiedades,color);
+    @include sizes(90%,90%);
+    object-fit: cover;
+    margin: {
+        left: 10px;
+        bottom: 10px;
+    }
+    
+}
+
+.uno,.dos,.tres,.cuatro,.cinco,.seis {
+    display:map-get($propiedades,display);
+    flex-direction: column;
+    align-items: map-get($propiedades,alineacion);
+    
+}
+
+.col {
+    padding-bottom: 20px;
+}
+
+/*************MAIN SERVICIOS*****************************************************/
+
+
+.main-servicios {
+    margin: {
+        top: 40px;
+        bottom: 120px;
+        left:20px;
+        right: 20px;
+    }
+}
+
+.titulo-servicios {
+    margin-bottom: 50px;
+    color: map-get($propiedades,color);
+    font-size: 75px;
+    text-align: map-get($propiedades,alineacion);
+}
+.text-bg-dark {
+    width: 100%;
+}
+
+.card-img {
+    @include sizes(100%,400px);
+    object-fit: cover;
+    opacity: 0.4;
+
+}
+
+.card-title {
+    margin-bottom: 60px;
+    font-size: 60px;
+}
+
+.informacion {
+    margin-top: -50px;
+    padding-bottom: 700px;
+}
+.informacion li {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px;
+   
+}
+
+.natacion,.gimnasio,.funcional {
+    margin-bottom: 80px;
+}
+
+.informacion-funcional li {
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 25px;
+}
+
+
+/*************MAIN CONTACTO*****************************************************/
+
+form {
+    display: map-get($propiedades,display);
+    flex-direction: column;
+    justify-content: map-get($propiedades,alineacion);
+
+}
+
+.titulo-contacto {
+    color: map-get($propiedades,color);
+    text-align: map-get($propiedades,alineacion);
+    font-size: 60px;
+}
+
+.actividad {
+    color: map-get($propiedades,color);
+    font-size: 45px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+}
+
+.datos {
+    display:map-get($propiedades,display);
+    flex: {
+        wrap:wrap;
+        direction: column;
+    }
+    text-align: map-get($propiedades,alineacion);
+}
+
+.datos div {
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+label {
+    color: $colorBlanco;
+    font-size: 30px;
+
+}
+
+
+.consulta-envio {
+    display: map-get($propiedades,display);
+    flex-direction: column;
+    align-items: map-get($propiedades,alineacion);
+}
+
+.form-control {
+
+    margin-top: 40px;
+    @include sizes(700px,700px);
+    font-size: 25px;
+    
+}
+
+.form-floating label {
+    margin-top: -10px;
+}
+
+
+.btn-primary {
+    margin-top: 10px;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.footer-contacto {
+    margin-top: 110px;
+}
+
+.form-check {
+    display:map-get($propiedades,display);
+    justify-content: map-get($propiedades,alineacion);
+    margin-top: -10px;
+}
+
+.form-check-label {
+    margin: {
+        top: -12px;
+        left: 10px;
+    }
+    
+}
+
+
+

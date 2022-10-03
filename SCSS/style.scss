@@ -1,0 +1,20 @@
+@mixin sizes($width,$height) {
+    width: $width;
+    height: $height;
+}
+
+$propiedades: (
+    alineacion:center,
+    color:orange,
+    display:flex,
+
+);
+
+@import "colores";
+
+
+@import "desktop";
+@import "tablet";
+@import "mobile";
+
+

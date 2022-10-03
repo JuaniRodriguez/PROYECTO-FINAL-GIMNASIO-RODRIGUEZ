@@ -1,0 +1,33 @@
+.footer {
+    grid-area: footer;
+    display: map-get($propiedades,display);
+    justify-content: space-between;
+    align-items: baseline;
+    margin: {
+        top: 80px;
+        left: 5px;
+        
+    }
+    
+}
+
+#facebook,#instagram,#whatsapp {
+    font-size: 50px;
+    margin-right: 20px;
+    border-radius: 15px;
+    color: map-get($propiedades,color);
+}
+
+.footer-contacto {
+    grid-area: footer;
+    display: map-get($propiedades,display);
+    justify-content: space-between;
+    align-items: baseline;
+    margin: {
+        top: 80px;
+        left: 5px;
+        
+    }
+}
+
+
